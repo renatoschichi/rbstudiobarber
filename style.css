@@ -11,14 +11,6 @@ html {
   background-color: orange;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .header {
   background-color: orange;
 }
@@ -28,6 +20,43 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+}
+
+.nav-logo {
+  font-style: inherit;
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: black;
+  text-shadow: rgb(211, 143, 17);
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: black;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 .hamburger {
@@ -42,35 +71,6 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  margin-left: 5rem;
-}
-
-.nav-link {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: black;
-}
-
-.nav-link:hover {
-  color: white;
-}
-
-.nav-logo {
-  font-style: inherit;
-  font-size: 2.1rem;
-  font-weight: 900;
-  color: black;
-  text-shadow: rgb(211, 143, 17);
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -226,19 +226,19 @@ img {
   padding: 0;
 }
 
-.cards_item {
+.cards-item {
   display: flex;
   padding: 1rem;
 }
 
 @media (min-width: 40rem) {
-  .cards_item {
+  .cards-item {
     width: 50%;
   }
 }
 
 @media (min-width: 56rem) {
-  .cards_item {
+  .cards-item {
     width: 33.3333%;
   }
 }
@@ -250,52 +250,6 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-}
-
-.card_content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
-}
-
-.card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
-}
-
-.card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-  font-weight: 400;
-}
-.made_by {
-  font-weight: 400;
-  font-size: 13px;
-  margin-top: 35px;
-  text-align: center;
-}
-
-h2 {
-  color: orange;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin: 40px 0px 40px 0px;
-}
-
-.services-list {
-  color: orange;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin: 40px 0px 40px 0px;
 }
 
 .btn-service {
@@ -358,15 +312,7 @@ h2 {
   margin: 20px 0px 20px 0px;
 }
 
-hr {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  display: block;
-  width: 100%;
-  border: 1px solid orange;
-}
-
-.footer-distributed {
+.rb-footer {
   background: black;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -376,40 +322,34 @@ hr {
   padding: 55px 50px;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
+.rb-footer .footer-left,
+.rb-footer .footer-center,
+.rb-footer .footer-right {
   display: inline-block;
   vertical-align: top;
 }
 
-/* Footer left */
-
-.footer-distributed .footer-left {
+.rb-footer .footer-left {
   width: 40%;
 }
 
-/* The company logo */
-
-.footer-distributed h3 {
+.rb-footer h3 {
   color: #ffffff;
   font: normal 36px "Open Sans", cursive;
   margin: 0;
 }
 
-.footer-distributed h3 span {
+.rb-footer h3 span {
   color: lightseagreen;
 }
 
-/* Footer links */
-
-.footer-distributed .footer-links {
+.rb-footer .footer-links {
   color: #ffffff;
   margin: 20px 0 12px;
   padding: 0;
 }
 
-.footer-distributed .footer-links a {
+.rb-footer .footer-links a {
   display: inline-block;
   line-height: 1.8;
   font-weight: 400;
@@ -417,20 +357,18 @@ hr {
   color: inherit;
 }
 
-.footer-distributed .footer-company-name {
+.rb-footer .footer-rb-about {
   color: #ffffff;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
 }
 
-/* Footer Center */
-
-.footer-distributed .footer-center {
+.rb-footer .footer-center {
   width: 35%;
 }
 
-.footer-distributed .footer-center i {
+.rb-footer .footer-center i {
   background-color: #33383b;
   color: #ffffff;
   font-size: 25px;
@@ -443,12 +381,12 @@ hr {
   vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope {
+.rb-footer .footer-center i.fa-envelope {
   font-size: 17px;
   line-height: 38px;
 }
 
-.footer-distributed .footer-center p {
+.rb-footer .footer-center p {
   display: inline-block;
   color: #ffffff;
   font-weight: 400;
@@ -456,19 +394,19 @@ hr {
   margin: 0;
 }
 
-.footer-distributed .footer-center p span {
+.rb-footer .footer-center p span {
   display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
 }
 
-.footer-distributed .footer-center p a {
+.rb-footer .footer-center p a {
   color: orange;
   text-decoration: none;
 }
 
-.footer-distributed .footer-links a:before {
+.rb-footer .footer-links a:before {
   content: "|";
   font-weight: 300;
   font-size: 20px;
@@ -478,17 +416,15 @@ hr {
   padding-right: 5px;
 }
 
-.footer-distributed .footer-links .link-1:before {
+.rb-footer .footer-links .link-1:before {
   content: none;
 }
 
-/* Footer Right */
-
-.footer-distributed .footer-right {
+.rb-footer .footer-right {
   width: 20%;
 }
 
-.footer-distributed .footer-company-about {
+.rb-footer .footer-rb-about {
   line-height: 20px;
   color: #92999f;
   font-size: 13px;
@@ -496,7 +432,7 @@ hr {
   margin: 0;
 }
 
-.footer-distributed .footer-company-about span {
+.rb-footer .footer-rb-about span {
   display: block;
   color: #ffffff;
   font-size: 14px;
@@ -504,11 +440,11 @@ hr {
   margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons {
+.rb-footer .footer-icons {
   margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a {
+.rb-footer .footer-icons a {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -525,23 +461,21 @@ hr {
   margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 880px) {
-  .footer-distributed {
+  .rb-footer {
     font: bold 14px sans-serif;
   }
 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
+  .rb-footer .footer-left,
+  .rb-footer .footer-center,
+  .rb-footer .footer-right {
     display: block;
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
   }
 
-  .footer-distributed .footer-center i {
+  .rb-footer .footer-center i {
     margin-left: 0;
   }
 }
