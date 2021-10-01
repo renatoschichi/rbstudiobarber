@@ -15,10 +15,6 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
-function refreshPage() {
-  window.location.reload();
-}
-
 function setDateAndTime() {
   window.open(
     "https://booksy.com/pt-br/29857_rb-studio-barber_barba_1011594_sao-vicente"
