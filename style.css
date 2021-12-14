@@ -230,12 +230,6 @@ hr {
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-}
-
 img {
   height: auto;
   max-width: 100%;
@@ -353,12 +347,6 @@ img {
 
 .rb-footer .footer-left {
   width: 40%;
-}
-
-.rb-footer h3 {
-  color: #ffffff;
-  font: normal 36px "Open Sans", cursive;
-  margin: 0;
 }
 
 .rb-footer h3 span {
